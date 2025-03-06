@@ -1,0 +1,91 @@
+{% comment %} {% load static %} {% endcomment %}
+
+<div class="footer_container">
+    <div class="footer_information_container">
+        <div class="footer_information_title">Informations
+            <ul class="footer_information_list">
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkWho" href="/">Qui sommes-nous</a>
+                </li>
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkWhat" href="/">Que proposons-nous</a>
+                </li>
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkCgu" href="/">Conditions générales d'utilisation</a>
+                </li>
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkCgv" href="/">Conditions générales de vente</a>
+                </li>
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkHelp" href="/">Aide</a>
+                </li>                    
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkBlog" href="/">Blog</a>
+                </li>
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkContact" href="/">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_information_title">Publicité
+            <ul class="footer_information_list">
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkContactPublicity" href="/">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_information_title">Presse
+            <ul class="footer_information_list">
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkInfoPress" href="/">On parle de nous</a>
+                </li>
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkContactPress" href="/">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_information_title">Jobs
+            <ul class="footer_information_list">
+                <li class="footer_information_content">
+                    <a class="footer_information_link" id="footerLinkContactJob" href="/">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer_container">
+    <div class="footer_additional_container">
+        <div class="footer_additional_social">
+            <ul class="additional_social_list">
+                <li class="additionnal_social_content">
+                    <a class="additionnal_social_link" href="/">
+                        <img class="additionnal_social_image" id="additionnalFacebookImage" src="{% static 'img/footer/facebook-icon-white.png' %}" alt="Lien Facebook">
+                    </a>
+                </li>
+                <li class="additionnal_social_content">
+                    <a class="additionnal_social_link" href="/">
+                        <img class="additionnal_social_image" id="additionnalInstagramImage" src="{% static 'img/footer/instagram-icon-white.png' %}" alt="Lien Instagram">
+                    </a>
+                </li>
+                <li class="additionnal_social_content">
+                    <a class="additionnal_social_link" href="/">
+                        <img class="additionnal_social_image" id="additionnalYoutubeImage" src="{% static 'img/footer/youtube-icon-white.png' %}" alt="Lien Youtube">
+                    </a>
+                </li>
+                <li class="additionnal_social_content">
+                    <a class="additionnal_social_link" href="/">
+                        <img class="additionnal_social_image" id="additionnalLinkedinImage" src="{% static 'img/footer/linkedin-icon-white.png' %}" alt="Lien Linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_additional_logo">
+            <a class="additional_logo_link" href="/">
+                <img class="additionnal_logo_image" src="{% static 'img/logo_green.png' %}">
+            </a>
+        </div>
+        <div class="footer_additional_copyright">
+            <p class="additional_copyright_text">Copyright &copy; {% now "Y" %} &middot; EasyCourse &middot; Tous droits réservés</p>
+        </div>
+    </div>  
+</div>
