@@ -118,6 +118,17 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Liste des chemins vers les dossiers static des autres applications du projet (ex.: header.js dans homepage.js)
+# Sans ces chemins, il n'est pas possible de faire fonctionner les fichiers static des autres applications.
+APP_STATIC_DIRS = [
+    BASE_DIR / 'homepage' / 'static',
+    # Ajoutez ici d'autres chemins selon vos besoins
+]
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+] + APP_STATIC_DIRS
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
