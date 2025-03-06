@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,7 +11,7 @@
     </head>
     <body>
         <header>
-            {% comment %} {% include "layouts/partials/header.html" %} {% endcomment %}
+            {% include 'layouts/partials/header.html'%}
         </header>
 
         <div class="body">
@@ -22,9 +24,9 @@
             {% endblock body %}
         </div>
 
-        {% comment %} <footer>
+        <footer>
             {% include "layouts/partials/footer.html" %}
-        </footer> {% endcomment %}
+        </footer>
         {% block javascript %}{% endblock javascript %}
     </body>
 </html>
