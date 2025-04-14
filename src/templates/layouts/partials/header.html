@@ -1,47 +1,48 @@
 {% load static %}
 
-<nav class="navbar bg-body-primary p-4">
-    <div class="container">
-            <a class="navbar-brand" href="/" alt="Lien page d'accueil">
-                <img 
-                    class="img-fluid" width="200" 
-                    src="{% static "img/logo.png" %}" 
-                    alt="logo et lien page d'accueil"
-                >
-            </a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Logo à gauche -->
+    <a class="navbar-brand" href="/" alt="Lien page d'accueil">
+        <img 
+            class="img-fluid" width="200" 
+            src="{% static "img/logo_red.png" %}" 
+            alt="logo et lien page d'accueil"
+        >
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
     {% comment %} <div class="container"> {% endcomment %}
-    <ul class="container">
-        <li class="Row" id="navbarLinkContentLogin">
-            <a class="navbar_login_link" id="navbarLoginLink" href="/">
-                {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                <p class="navbar_link_title" id="navbarTitleLogin">Informations</p>
-            </a>
-        </li>
-        <li class="Row" id="navbarLinkContentLogin">
-            <a class="navbar_firstrescue_link" id="navbarfirstrescueLink" href="/">
-                {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                <p class="navbar_link_title" id="navbarTitleLogin">Premiers secours</p>
-            </a>
-        </li>
-        <li class="Row" id="navbarLinkContentLogin">
-            <a class="navbar_photo_link" id="navbarphotoLink" href="/">
-                {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                <p class="navbar_link_title" id="navbarTitleLogin">Photos</p>
-            </a>
-        </li>
-        <li class="Row" id="navbarLinkContentLogin">
-            <a class="navbar_video_link" id="navbarvideoLink" href="/">
-                {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                <p class="navbar_link_title" id="navbarTitleLogin">Videos</p>
-            </a>
-        </li>
-        <li class="Row" id="navbarLinkContentLogin">
-            <a class="navbar_play_link" id="navbarplayLink" href="/">
-                {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                <p class="navbar_link_title" id="navbarTitleLogin">Jeux</p>
-            </a>
-        </li>
-    </ul>
+        <ul class="navbar-nav ms-auto">
+            <li>
+                <a class="navbar_login_link" id="navbarLoginLink" href="/">
+                    {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
+                    <p class="navbar_link_title" id="navbarTitleLogin">Test</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar_firstrescue_link" id="navbarfirstrescueLink" href="/">
+                    {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
+                    <p class="navbar_link_title" id="navbarTitleLogin">Premiers secours</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar_photo_link" id="navbarphotoLink" href="/">
+                    {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
+                    <p class="navbar_link_title" id="navbarTitleLogin">Photos</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar_video_link" id="navbarvideoLink" href="/">
+                    {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
+                    <p class="navbar_link_title" id="navbarTitleLogin">Videos</p>
+                </a>
+            </li>
+            <li>
+                <a class="navbar_play_link" id="navbarplayLink" href="/">
+                    {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
+                    <p class="navbar_link_title" id="navbarTitleLogin">Jeux</p>
+                </a>
+            </li>
+        </ul>
+    </div>
     {% comment %} </div> {% endcomment %}
 </nav>
