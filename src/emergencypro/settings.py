@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage.apps.HomepageConfig',
+    'video.apps.VideoConfig',
 ]
 
 MIDDLEWARE = [
@@ -122,12 +123,16 @@ STATIC_URL = 'static/'
 # Sans ces chemins, il n'est pas possible de faire fonctionner les fichiers static des autres applications.
 APP_STATIC_DIRS = [
     BASE_DIR / 'homepage' / 'static',
+    BASE_DIR / 'video' / 'static',
     # Ajoutez ici d'autres chemins selon vos besoins
 ]
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ] + APP_STATIC_DIRS
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

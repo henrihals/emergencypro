@@ -8,10 +8,10 @@
 {% comment %} {% load compress%} {% endcomment %}
 
 {% block css %}
-
-{% comment %} {% compress css %}
-    <link type="text/x-scss" href="{% static 'css/style_homepage.scss' %}" rel="stylesheet">
-{% endcompress %} {% endcomment %}
+{% comment %} 
+{% compress css %} {% endcomment %}
+    {% comment %} <link type="text/x-scss" href="{% static 'css/homepage.css' %}" rel="stylesheet"> {% endcomment %}
+{% comment %} {% endcompress %} {% endcomment %}
 
 {% endblock css %}
 
