@@ -1,0 +1,86 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% comment %} {% load sass_tags %} {% endcomment %}
+
+{% comment %} <link href="{% sass_src 'css/style.scss' %}" rel="stylesheet" type="text/css" /> {% endcomment %}
+{% comment %} {% extends "layouts/base.html" %} {% endcomment %}
+
+{% comment %} {% load compress%} {% endcomment %}
+
+{% block css %}
+{% comment %} 
+{% compress css %} {% endcomment %}
+    {% comment %} <link type="text/x-scss" href="{% static 'css/homepage.css' %}" rel="stylesheet"> {% endcomment %}
+{% comment %} {% endcompress %} {% endcomment %}
+
+{% endblock css %}
+
+{% block title %}
+    Video
+{% endblock title %}
+
+{% comment %} {% block search %}
+    {% include "search.html" %}
+{% endblock search %} {% endcomment %}
+
+{% block body %}
+<main class="main">
+    <h1 class="text-danger">Page video</h1>
+    <h3>Par Thème :</h3>
+    <ul>
+        <li>Gestes de Premiers Secours : Vidéos montrant les gestes de base comme la réanimation cardio-pulmonaire (RCP), l'utilisation d'un défibrillateur, la position latérale de sécurité, etc.</li>
+        <li>Interventions Opérationnelles : Vidéos sur les interventions des sapeurs-pompiers, comme les sauvetages, les interventions en cas d'incendie, les secours en milieu périlleux, etc.</li>
+        <li>Formations et Tutoriels : Vidéos éducatives et tutoriels sur les formations PSC1, PSE, etc.</li>
+    </ul>
+    
+    <h2>Conseils pour Agrémenter la Page</h2>
+    <h3>Introduction et Description :<h3>
+
+    <p>Ajoutez une introduction claire et concise en haut de la page expliquant l'objectif de la page et comment naviguer parmi les vidéos.
+    Pour chaque vidéo, incluez une brève description et les points clés abordés.</p>
+
+    <h3>Miniatures et Titres :</h3>
+
+    <p>Utilisez des miniatures attrayantes et des titres clairs pour chaque vidéo. Les miniatures doivent être représentatives du contenu de la vidéo.
+    Ajoutez des tags ou des mots-clés pour faciliter la recherche et le filtrage des vidéos.</p>
+
+    <h3>Catégories et Filtres :</h3>
+
+    <p>Créez des catégories et des filtres pour permettre aux utilisateurs de trier les vidéos par thème, niveau de difficulté, public cible, etc.
+    Utilisez des menus déroulants ou des boutons de filtrage pour une navigation facile.</p>
+
+    <h3>Playlists :</h3>
+
+    <p>Organisez les vidéos en playlists thématiques. Par exemple, une playlist pour les gestes de premiers secours, une autre pour les interventions opérationnelles, etc.
+    Les playlists permettent aux utilisateurs de regarder plusieurs vidéos sur un sujet spécifique sans avoir à chercher manuellement.</h3>
+
+    <h3>Recommandations et Vidéos Populaires :</h3>
+
+    <p>Mettez en avant des vidéos recommandées ou populaires sur la page d'accueil. Cela peut inclure des vidéos récentes, des tutoriels populaires, ou des témoignages marquants.
+    Utilisez des sections comme "Vidéos les plus vues", "Nouveautés", ou "Recommandations" pour attirer l'attention des utilisateurs.</p>
+
+    <h3>Commentaires et Interactions :</h3>
+
+    <p>Permettez aux utilisateurs de laisser des commentaires et des avis sur les vidéos. Cela peut aider à créer une communauté et à obtenir des retours sur le contenu.
+    Ajoutez des boutons de partage pour permettre aux utilisateurs de partager les vidéos sur les réseaux sociaux.</p>
+
+    <h3>Design et Mise en Page :</h3>
+
+    <p>Utilisez un design propre et moderne pour la page. Évitez les éléments encombrants et assurez-vous que la page est facile à naviguer.
+    Utilisez des couleurs et des polices cohérentes avec le thème des premiers secours et des pompiers.
+    Assurez-vous que la page est responsive et adaptée aux mobiles, tablettes et ordinateurs de bureau.</p>
+
+    <h3>Ressources Complémentaires :</h3>
+
+    <p>Ajoutez des liens vers des ressources complémentaires comme des articles, des guides PDF, des infographies, etc.
+    Proposez des liens vers des sites officiels comme Pompiers.fr, des SDIS locaux, ou des organisations de secourisme.</p>
+
+</main>
+{% endblock body %}
+
+{% block javascript %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    {% comment %} <script src="{% static 'js/header.js' %}"></script>
+    <script src="{% static 'js/footer.js' %}"></script>
+    <script src="{% static 'js/homepage.js' %}"></script> {% endcomment %}
+{% endblock javascript %}

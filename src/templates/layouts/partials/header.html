@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Logo à gauche -->
-    <a class="navbar-brand" href="/" alt="Lien page d'accueil">
+    <a class="navbar-brand ms-5" href="/" alt="Lien page d'accueil">
         <img 
             class="img-fluid" width="200" 
             src="{% static "img/logo_red.png" %}" 
@@ -11,35 +11,29 @@
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
     {% comment %} <div class="container"> {% endcomment %}
-        <ul class="navbar-nav ms-auto">
-            <li>
-                <a class="navbar_login_link" id="navbarLoginLink" href="/">
-                    {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                    <p class="navbar_link_title" id="navbarTitleLogin">Test</p>
-                </a>
-            </li>
+        <ul class="navbar-nav ms-auto me-5">
             <li>
                 <a class="navbar_firstrescue_link" id="navbarfirstrescueLink" href="/">
                     {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                    <p class="navbar_link_title" id="navbarTitleLogin">Premiers secours</p>
+                    <p class="nav-link" id="navbarTitleLogin">Premiers secours</p>
                 </a>
             </li>
             <li>
                 <a class="navbar_photo_link" id="navbarphotoLink" href="/">
                     {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                    <p class="navbar_link_title" id="navbarTitleLogin">Photos</p>
+                    <p class="nav-link" id="navbarTitleLogin">Photos</p>
                 </a>
             </li>
             <li>
-                <a class="navbar_video_link" id="navbarvideoLink" href="/">
+                <a class="navbar_video_link" id="navbarvideoLink" href="video">
                     {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                    <p class="navbar_link_title" id="navbarTitleLogin">Videos</p>
+                    <p class="nav-link" id="navbarTitleLogin">Videos</p>
                 </a>
             </li>
             <li>
                 <a class="navbar_play_link" id="navbarplayLink" href="/">
                     {% comment %} <img class="navbar_link_image" id="navbarImageLogin" src="{% static "img/navbar/login-white.png" %}" alt="Lien inscription ou connection"> {% endcomment %}
-                    <p class="navbar_link_title" id="navbarTitleLogin">Jeux</p>
+                    <p class="nav-link" id="navbarTitleLogin">Jeux</p>
                 </a>
             </li>
         </ul>
